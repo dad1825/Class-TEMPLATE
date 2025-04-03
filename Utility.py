@@ -56,7 +56,7 @@ class Utility(object):
             # print("Debug: Main loop running")
 
     @classmethod
-    def insert_repairorder(cls):
+    def insert_ro(cls):
         # print("Debug: Insert Repair order Called")
         # Take input for the constructor.
         date = input("Enter the date yyyy-mm-dd : ")
@@ -67,7 +67,7 @@ class Utility(object):
         total = input("Enter the total '0.00' : ")
         notes = input("Enter any Notes, up to 300 char : ")
         # Populate repair order instance.
-        repairOrder = RepairOrder(date, gross, our_cut, workers_comp, misc, total, notes)
+        repairorder = RepairOrder(date, gross, our_cut, workers_comp, misc, total, notes)
         # Call repr for conformation.
         print("\n")
         print(repairorder.__repr__)
